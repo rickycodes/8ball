@@ -1,6 +1,6 @@
 {
   "name": "8ball",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "magic 8ball",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,8 @@
     "ball"
   ],
   "bin": {
-    "8ball": "cli.js"
+    "8ball": "cli.js",
+    "🎱": "cli.js"
   },
   "author": "@rickycodes",
   "bugs": {
