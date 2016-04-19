@@ -1,6 +1,6 @@
 {
   "name": "8ball",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "magic 8ball",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,14 @@
     "8",
     "ball"
   ],
+  "bin": {
+    "8ball": "cli.js"
+  },
   "author": "@rickycodes",
+  "bugs": {
+    "url": "https://github.com/rickycodes/8ball/issues"
+  },
+  "homepage": "https://github.com/rickycodes/8ball",
   "license": "MIT",
   "engines" : {
     "node" : ">=4"

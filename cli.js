@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const arg = process.argv.map((a, i) => i > 1 ? `${a} ` : null).join('')
 const eightball = require('./')()
 
