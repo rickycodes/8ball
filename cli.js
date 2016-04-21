@@ -1,9 +1,15 @@
 #!/usr/bin/env node
 
-const arg = process.argv.map((a, i) => i > 1 ? `${a} ` : null).join('')
+const stdin = process.stdin
+
+stdin.resume() & stdin.setEncoding('utf8')
+
+const arg = process.argv[2]
 const eightball = require('./')()
+const ask = () => output('please ask a question')
+const output = (str) => process.stdout.write(str + '\n') && process.exit()
+const check = (str) => (str && str.match(/\?\s*$/)) ? output(eightball) : ask()
 
-if(!arg || arg.substring(arg.length - 2) !== '? ')
-  console.log(`ask me a question, silly!`) & process.exit()
+if (stdin.isTTY) check(arg)
 
-console.log(eightball)
+stdin.on('data', check)

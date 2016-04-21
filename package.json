@@ -1,6 +1,6 @@
 {
   "name": "8ball",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "magic 8ball",
   "main": "index.js",
   "scripts": {
